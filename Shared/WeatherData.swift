@@ -3,9 +3,9 @@
 //  WidgetDemo
 //
 //  CIS 137
-//  Homework #15
+//  Homework #16
 //  Les Poltrack
-//  11/22/21.
+//  Decembet 2, 2021.
 //
 
 import Foundation
@@ -19,6 +19,20 @@ struct WeatherEntry: TimelineEntry {
     let icon: String
     let image: String
     let url: URL?
+}
+struct LocationData: Identifiable {
+    let city: String
+    let timeline: [WeatherEntry]
+    
+    var id: String {
+        city
+    }
+    static let london = LocationData(city: "London", timeline: londonTimeline)
+    static let miami = LocationData(city: "Miami", timeline: miamiTimeline)
+
+    func has(into hasher: inout Hasher) {
+        hasher.combine(city)
+    }
 }
 
 let hailUrl = URL(string: "weatherwidget://hail")

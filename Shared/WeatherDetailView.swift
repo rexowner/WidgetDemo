@@ -3,9 +3,9 @@
 //  WidgetDemo
 //
 //  CIS 137
-//  Homework #15
+//  Homework #16
 //  Les Poltrack
-//  11/22/21.
+//  Decembet 2, 2021.
 //
 
 import SwiftUI

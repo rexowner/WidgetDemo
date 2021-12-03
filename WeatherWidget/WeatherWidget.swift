@@ -3,9 +3,9 @@
 //  WeatherWidget
 //
 //  CIS 137
-//  Homework #15
+//  Homework #16
 //  Les Poltrack
-//  11/22/21.
+//  Decembet 2, 2021.
 //
 
 import WidgetKit
@@ -24,11 +24,19 @@ struct Provider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context,
                      completion: @escaping (Timeline<Entry>) -> ()) {
+        
+        var chosenLocation: LocationData
+        
+        if configuration.locations == .londonUK {
+            chosenLocation = .london
+        } else {
+            chosenLocation = .miami
+        }
         var entries: [WeatherEntry] = []
         var eventDate = Date()
         let halfMinute: TimeInterval = 30
         
-        for var entry in londonTimeline {
+        for var entry in chosenLocation.timeline {
             entry.date = eventDate
             eventDate += halfMinute
             entries.append(entry)

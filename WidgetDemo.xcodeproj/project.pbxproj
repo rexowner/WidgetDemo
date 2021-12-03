@@ -547,7 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = weatherBackgroundColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 955G9A58VT;
 				INFOPLIST_FILE = WeatherWidget/Info.plist;
@@ -570,7 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = weatherBackgroundColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 955G9A58VT;
 				INFOPLIST_FILE = WeatherWidget/Info.plist;
